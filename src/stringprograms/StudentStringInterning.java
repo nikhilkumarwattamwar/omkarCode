@@ -13,12 +13,12 @@ public class StudentStringInterning {
 	    }
 
 	    public static void main(String[] args) {
-	    	StudentStringInterning s1 = new StudentStringInterning("Omkar");
-	    	StudentStringInterning s2 = new StudentStringInterning(new String("Omkar"));
-	    	StudentStringInterning s3 = new StudentStringInterning("Java");
+	    	StudentStringInterning firstStudent = new StudentStringInterning("Omkar");
+	    	StudentStringInterning secondStudent = new StudentStringInterning(new String("Omkar"));
+	    	StudentStringInterning thirdStudent = new StudentStringInterning("Java");
 
-	        System.out.println(s1.getName() == s2.getName());
-	        System.out.println(s1.getName() == s3.getName());
+	        System.out.println(firstStudent.getName() == secondStudent.getName());
+	        System.out.println(firstStudent.getName() == thirdStudent.getName());
 	    }
 
 }

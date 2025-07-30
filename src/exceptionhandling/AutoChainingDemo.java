@@ -7,7 +7,7 @@ public class AutoChainingDemo {
 	public static void main(String[] args) {
 		try {
 			processFile();
-		} catch (MyAppException2 e) {
+		} catch (MyAppCustomException e) {
 			System.out.println("Custom exception caught: " + e.getMessage());
 			System.out.println("Original cause: " + e.getCause());
 			e.printStackTrace();
@@ -15,11 +15,11 @@ public class AutoChainingDemo {
 		
 	}
 
-	static void processFile() throws MyAppException2 {
+	static void processFile() throws MyAppCustomException {
 		try {
 			FileReader reader = new FileReader("omkar.txt");
 		} catch (FileNotFoundException e) {
-			throw new MyAppException2("not able to read file", e);
+			throw new MyAppCustomException("not able to read file", e);
 		}
 	}
 }

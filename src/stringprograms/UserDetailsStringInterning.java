@@ -11,9 +11,9 @@ public class UserDetailsStringInterning {
 	}
 
 	public static void main(String[] args) {
-		UserDetailsStringInterning u1 = new UserDetailsStringInterning("Omkar", new String("India"));
-		UserDetailsStringInterning u2 = new UserDetailsStringInterning("Aniket", new String("India"));
-		System.out.println(u1.country == u2.country);
+		UserDetailsStringInterning firstUser = new UserDetailsStringInterning("Omkar", new String("India"));
+		UserDetailsStringInterning secondUser = new UserDetailsStringInterning("Aniket", new String("India"));
+		System.out.println(firstUser.country == secondUser.country);
 	}
 
 }
