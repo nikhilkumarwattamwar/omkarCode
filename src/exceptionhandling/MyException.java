@@ -9,7 +9,6 @@ public class MyException {
 			System.out.println("Inside catch block: " + mae.getMessage());
 		}
 	}
-
 	static void myTest(String str) throws MyAppException {
 		if (str == null) {
 			throw new MyAppException("String val is null");

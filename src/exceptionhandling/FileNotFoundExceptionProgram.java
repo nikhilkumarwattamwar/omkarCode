@@ -3,8 +3,7 @@ package exceptionhandling;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-////here we are writing the program for handling the compile time exception
-public class Program2 {
+public class FileNotFoundExceptionProgram {
 
 	public static void main(String[] args) {
 
