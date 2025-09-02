@@ -68,7 +68,7 @@ public class StudentDetailsList {
 		System.out.println(" Last student:");
 		studentList.getLast().display();
 
-		Collections.sort(studentList,new Comparator<StudentDetailsList>() {
+		Collections.sort(studentList, new Comparator<StudentDetailsList>() {
 			@Override
 			public int compare(StudentDetailsList s1, StudentDetailsList s2) {
 				return Integer.compare(s1.name.length(), s2.name.length());

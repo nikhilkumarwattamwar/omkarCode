@@ -14,6 +14,7 @@ public class CustomComparatorProgram {
 				if (element1 % 10 > element2 % 10)
 					return 1;
 				else
+
 					return -1;
 			}
 		};
